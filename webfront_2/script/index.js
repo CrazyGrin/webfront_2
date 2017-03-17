@@ -19,7 +19,7 @@ function swing() {
 
 	init_css();
 
-	setInterval(function() {
+	var swing_time = setInterval(function() {
 
 
 		if (img_position == 0) {
@@ -74,7 +74,7 @@ swing_dot_ul.addEventListener('click', function() {
 
 		img_position = event.target.getAttribute('dot');
 		change_img(img_position);
-	}
+	};
 
 });
 swing_dot_ul.addEventListener('mouseover', function() {
@@ -97,29 +97,29 @@ function init_css() {
 
 	swing_dot_list[img_position].style.setProperty('background-color', 'rgba(250,35,87,1)');
 
-	setTimeout(function() {
+	var init_tittle = setTimeout(function() {
 
 		swing_tittle_list[img_position].style.setProperty('color', 'rgba(255,255,255,1)');
 		swing_tittle_list[img_position].style.setProperty('right', '0');
 		swing_tittle_list[img_position].style.setProperty('text-shadow', '1px 1px 5px rgba(0,0,0,1)');
 
-	}, 700)
+	}, 700);
 
-	setTimeout(function() {
+	var init_detail = setTimeout(function() {
 
 		swing_detail_list[img_position].style.setProperty('color', 'rgba(255,255,255,1)');
 		swing_detail_list[img_position].style.setProperty('left', '0');
 		swing_detail_list[img_position].style.setProperty('text-shadow', '1px 1px 5px rgba(0,0,0,1)');
 		swing_detail_list[img_position].style.setProperty('border-left', '1px solid rgba(50,44,32,1)');
 
-	}, 1100)
+	}, 1100);
 
-	setTimeout(function() {
+	var init_readmore = setTimeout(function() {
 
 		swing_readmore_list[img_position].style.setProperty('color', 'rgba(250,35,87,1)');
 		swing_readmore_list[img_position].style.setProperty('left', '300px');
 
-	}, 1100)
+	}, 1100);
 
 }
 
@@ -128,29 +128,29 @@ function move_in_css() {
 
 	swing_dot_list[img_position].style.setProperty('background-color', 'rgba(250,35,87,1)');
 
-	setTimeout(function() {
+	var init_tittle = setTimeout(function() {
 
 		swing_tittle_list[img_position].style.setProperty('color', 'rgba(255,255,255,1)');
 		swing_tittle_list[img_position].style.setProperty('right', '0');
 		swing_tittle_list[img_position].style.setProperty('text-shadow', '1px 1px 5px rgba(0,0,0,1)');
 
-	}, 1100)
+	}, 1100);
 
-	setTimeout(function() {
+	var init_detail = setTimeout(function() {
 
 		swing_detail_list[img_position].style.setProperty('color', 'rgba(255,255,255,1)');
 		swing_detail_list[img_position].style.setProperty('left', '0');
 		swing_detail_list[img_position].style.setProperty('text-shadow', '1px 1px 5px rgba(0,0,0,1)');
 		swing_detail_list[img_position].style.setProperty('border-left', '1px solid rgba(50,44,32,1)');
 
-	}, 1500)
+	}, 1500);
 
-	setTimeout(function() {
+	var init_readmore = setTimeout(function() {
 
 		swing_readmore_list[img_position].style.setProperty('color', 'rgba(250,35,87,1)');
 		swing_readmore_list[img_position].style.setProperty('left', '300px');
 
-	}, 1500)
+	}, 1500);
 }
 
 //清空样式

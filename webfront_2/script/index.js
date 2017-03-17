@@ -1,14 +1,14 @@
 //轮播DOM
-var main_swing = document.querySelector('.main_swing');
+var main_swing = document.querySelector('.main_swing'),
 
-var img_position = 0;
+	img_position = 0,
 
-var swing_tittle_list = document.querySelectorAll('.swing_img_info_tittle');
-var swing_detail_list = document.querySelectorAll('.swing_img_info_detail');
-var swing_readmore_list = document.querySelectorAll('.swing_img_info_readmore');
+	swing_tittle_list = document.querySelectorAll('.swing_img_info_tittle'),
+	swing_detail_list = document.querySelectorAll('.swing_img_info_detail'),
+	swing_readmore_list = document.querySelectorAll('.swing_img_info_readmore'),
 
-var swing_dot_ul = document.querySelector('.bottom_banner_swing_dot_list');
-var swing_dot_list = document.querySelectorAll('.bottom_banner_swing_dot_list > li');
+	swing_dot_ul = document.querySelector('.bottom_banner_swing_dot_list'),
+	swing_dot_list = document.querySelectorAll('.bottom_banner_swing_dot_list > li');
 
 window.onload = function() {
 	swing();
